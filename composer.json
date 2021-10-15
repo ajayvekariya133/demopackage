@@ -12,6 +12,6 @@
             "email": "ajayvekariya01@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
