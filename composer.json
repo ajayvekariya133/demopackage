@@ -1,0 +1,17 @@
+{
+    "name": "bytefum/demoav",
+    "description": "Create Demo Packages",
+    "autoload": {
+        "psr-4": {
+            "Bytefum\\Demoav\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ajayvekariya",
+            "email": "ajayvekariya01@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
