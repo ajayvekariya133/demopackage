@@ -11,7 +11,7 @@ class DemoavController extends Controller
     
     public function index()
     {         
-        $data = Demoav::first();
+        $data['name'] = 'Users';
           
         return view('demoav::index',compact('data'));
     }
