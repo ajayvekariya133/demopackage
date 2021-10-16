@@ -13,7 +13,7 @@ class DemoavServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Bytefum\Demoav\DemoavController');
+        $this->app->make('Bytefum\Demoav\Controllers\DemoavController');
     }
 
     /**
@@ -23,11 +23,12 @@ class DemoavServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__.'/routes.php';
+        include __DIR__.'/routes/routes.php'; 
         $this->loadMigrationsFrom(__DIR__.'/migrations');
-        $this->loadViewsFrom(__DIR__.'/views', 'demoav');
+        $this->loadViewsFrom(__DIR__.'/views', 'demoav'); 
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/bytefum/demoav'),
+            // __DIR__.'/views' => base_path('resources/views/bytefum/demoav'),
+            // __DIR__.'/public' => public_path('css'),
         ]);
     }
 }
